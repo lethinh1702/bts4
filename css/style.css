@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: 'Jost', sans-serif;
+    background-color: #fff;
+    color: #666;
+}
+.container{
+    width: 100%;
+    margin: 0auto;
+    padding: 0 15px;
+}
+.title-small{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    display: block;
+}   
+.title-big{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
+/* REPONSIVE */
+@media screen and (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media screen and (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media screen and (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media screen and (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+@media screen and (min-width:1280px){
+    .container{
+        max-width: 1200px;
+    }
+}
