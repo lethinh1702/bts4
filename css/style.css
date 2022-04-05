@@ -10,8 +10,9 @@ body,html{
 }
 .container{
     width: 100%;
-    margin: 0auto;
-    padding: 0 15px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .title-small{
     font-size: 14px;
@@ -52,4 +53,169 @@ body,html{
     .container{
         max-width: 1200px;
     }
+}
+
+/* HEADER */
+header{
+    /* background-color: #151421; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999999;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+header .navbar{
+    padding: 19px 0;
+}
+header .navbar .navbar-brand i{
+    font-size: 30px;
+    color: #009f4d;
+    vertical-align: bottom;
+}
+header .navbar .navbar-brand span:first-of-type{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+}
+header .navbar .navbar-brand span:last-of-type{
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding-left: 46px;
+    font-weight: 600;
+    opacity: .9;
+    line-height: 1;
+}
+header .collapse .navbar-nav .nav-link span{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 5px 10px;
+    opacity: .8;
+    transition: all .5s;
+}
+header .collapse .navbar-nav .nav-link:hover span{
+    opacity: 1;
+}
+header .collapse .navbar-nav .nav-link i{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+header .collapse .navbar-nav .nav-item.active .nav-link span{
+    opacity: 1;
+}
+header .navbar .search{
+    color: #fff;
+    height: 45px;
+    width: 45px;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    background-color: #009f4d;
+    margin-right: 16px;
+    cursor: pointer;
+}
+header .navbar .mode{
+    width: 24px;
+    height: 24px;
+    padding: 1px 0 ;
+}
+
+/* CAROUSEL */
+.corpCarousel{
+    height: 800px;
+    position: relative;
+}
+#carouselExampleCaptions,
+.corpCarousel .carousel-inner{
+    height: 100%;
+    position: relative;
+}
+.corpCarousel .carousel-inner .carousel-item img{
+    height: 100%;
+    width: 100vh;
+    image-rendering: pixelated;
+    object-fit: cover;
+    vertical-align:text-top;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel-caption{
+    top: 200px;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel-caption h1{
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    max-width: 800px;
+    font-weight: 600;
+    color: #e6e8f6;
+    text-align: left;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel-caption p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 1.5rem;
+    max-width: 600px;
+    color: #fff;
+    letter-spacing: 0.01em;
+    opacity: .9;
+    text-align: left;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel-caption .cta-btn{
+    padding-top: 30px;
+    text-align: left;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel-caption .btn-style{
+    padding: 15px 50px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel-caption .btn-primary{
+    color: #fff;
+    background-color: #00a63f;
+    border-color: #00a63f;
+    transition: all .5s;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel-caption .btn-primary:hover{
+    background-color: #008030;
+    border-color: #00732c;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel-caption .btn{
+    display: inline-block;
+}
+.corpCarousel .carousel-inner .carousel-item .carousel__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 42, 55, 0.8);
+    z-index: 1;
+}
+#carouselExampleCaptions .carousel-control-prev{
+    bottom: 50px;
+    right: 95px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: pointer;
+    z-index: 10;
+}
+#carouselExampleCaptions .carousel-control-next{
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: pointer;
+    z-index: 10;
 }
