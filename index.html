@@ -15,8 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- ANIMATE -->
-    <link
-    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- SLICK -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -144,7 +148,7 @@
     <section class="about_us pt-3 pb-3 py-5">
       <div class="about_us__content container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 m-auto">
             <div class="about__wrap">
               <p class="title-small" style="margin-bottom: 0px;">ABOUT US</p>
               <h3 class="title-big">We make the best strategies for you, Enhancing your success</h3>
@@ -227,13 +231,413 @@
         </div>
       </div>
     </section>
-    <section class="services"></section>
-    <section class="projects"></section>
-    <section class="progresss"></section>
-    <section class="testimonials"></section>
-    <section class="blog"></section>
-    <section class="subscribe"></section>
-    <footer></footer>
+    <section class="services">
+      <div class="container">
+        <div class="services__title">
+          <h3 class="title-big">Always there for your care, our Services</h3>
+        </div>
+        <div class="services__content">
+          <div class="row">
+            <div class="col-4">
+              <img src="./images/s1.jpg" alt="image1">
+              <p class="p-content">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+              <a href="#">Learn More</a>
+              <a href="#">Work Expertise</a>
+            </div>
+            <div class="col-4">
+              <img src="./images/s2.jpg" alt="image2">
+              <p class="p-content">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+              <a href="#">Learn More</a>
+              <a href="#">Product Development</a>
+            </div>
+            <div class="col-4">
+              <img src="./images/s3.jpg" alt="image3">
+              <p class="p-content">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+              <a href="#">Learn More</a>
+              <a href="#">Software Development</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects__content container">
+        <div class="projects__title">
+          <p3 class="title-small">OUR GALLERY</p3>
+          <h33 class="title-big">Successful projects we've done</h33>
+        </div>
+        <div class="projects__img">
+          <div class="projects__item">
+            <img src="./images/c1.jpg" alt="project">
+            <div class="projects__overlay">
+              <div class="overlay__text">
+                <h5>Project 1</h5>
+                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="projects__item">
+            <img src="./images/c2.jpg" alt="project">
+            <div class="projects__overlay">
+              <div class="overlay__text">
+                <h5>Project 2</h5>
+                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="projects__item">
+            <img src="./images/c3.jpg" alt="project">
+            <div class="projects__overlay">
+              <div class="overlay__text">
+                <h5>Project 3</h5>
+                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+              </div> 
+            </div>
+            </div>
+          <div class="projects__item">
+            <img src="./images/c4.jpg" alt="project">
+            <div class="projects__overlay">
+              <div class="overlay__text">
+                <h5>Project 4</h5>
+                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+              </div> 
+            </div>
+          </div>
+          <div class="projects__item">
+            <img src="./images/c5.jpg" alt="project">
+            <div class="projects__overlay">
+              <div class="overlay__text">
+                <h5>Project 5</h5>
+                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+              </div> 
+            </div>
+          </div>
+          <div class="projects__item">
+            <img src="./images/c6.jpg" alt="project">
+            <div class="projects__overlay">
+              <div class="overlay__text">
+                <h5>Project 6</h5>
+                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="projects__logo">
+          <div class="row">
+            <div class="col">
+              <img src="./images/brand1.png" alt="logo">
+            </div>
+            <div class="col">
+              <img src="./images/brand6.png" alt="logo">
+            </div>
+            <div class="col">
+              <img src="./images/brand3.png" alt="logo">
+            </div>
+            <div class="col">
+              <img src="./images/brand4.png" alt="logo">
+            </div>
+            <div class="col">
+              <img src="./images/brand5.png" alt="logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="progresss">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img src="./images/about.jpg" alt="about">
+          </div>
+          <div class="col-6">
+            <p class="title-small">YOUR SUCCESS IS OUR SUCCESS</p>
+            <h3 class="title-big">Web design, marketing & SEO solutions that get results</h3>
+            <div class="progresss-info info1">
+              <h6>
+                Marketing
+                <span>80%</span>
+              </h6>
+              <div class="progresss__content">
+                <div class="progresss__bar"></div>
+                <i class="fa fa-dot-circle"></i>
+              </div>
+            </div>
+            <div class="progresss-info info2">
+              <h6>
+                Responsive Web design
+                <span>95%</span>
+              </h6>
+              <div class="progresss__content">
+                <div class="progresss__bar"></div>
+                <i class="fa fa-dot-circle"></i>
+              </div>
+            </div>
+            <div class="progresss-info info3">
+              <h6>
+                Analytics
+                <span>60%</span>
+              </h6>
+              <div class="progresss__content">
+                <div class="progresss__bar"></div>
+                <i class="fa fa-dot-circle"></i>
+              </div>
+            </div>
+            <div class="progresss-info info4">
+              <h6>
+                Web Development
+                <span>85%</span>
+              </h6>
+              <div class="progresss__content">
+                <div class="progresss__bar"></div>
+                <i class="fa fa-dot-circle"></i>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__title">
+          <p class="title-small">HAPPY CLIENTS FEEDBACK</p>
+          <h3 class="title-big">Reviews and Testimonials</h3>
+        </div>
+        <div class="testimonials__content multiple-items">
+          <div class="testimonials__title">
+            <p class="p-content">Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+              Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Esse architecto est ea sunt eligendi cum?</p>
+            <div class="testimonials__des">
+              <img src="./images/team1.jpg" alt="team">
+              <div class="testimonials__name">
+                <h3>John wilson</h3>
+                <p class="p-content">Student</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__title">
+            <p class="p-content">Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+              Dolores molestias adipisci dolo amet!.</p>
+              <div class="testimonials__des">
+              <img src="./images/team2.jpg" alt="team">
+              <div class="testimonials__name">
+                <h3>John wilson</h3>
+                <p class="p-content">Student</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__title">
+            <p class="p-content">Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+              Dolores molestias adipisci dolo amet!.</p>
+              <div class="testimonials__des">
+              <img src="./images/team3.jpg" alt="team">
+              <div class="testimonials__name">
+                <h3>John wilson</h3>
+                <p class="p-content">Student</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__title">
+            <p class="p-content">Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+              Dolores molestias adipisci dolo amet!.</p>
+              <div class="testimonials__des">
+              <img src="./images/team4.jpg" alt="team">
+              <div class="testimonials__name">
+                <h3>John wilson</h3>
+                <p class="p-content">Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__title">
+          <p class="title-small">LATEST NEWS</p>
+          <h3 class="title-big">Our insight and articles</h3>
+        </div>
+        <div class="blog__content">
+          <div class="row">
+            <div class="col-4">
+              <div class="blog__item">
+                <div class="blog__img">
+                  <img src="./images/blog1.jpg" alt="blog">
+                </div>
+                <div class="blog__text">
+                  <p>Startup Business</p>
+                  <a href="#">Hello world!</a>
+                </div>
+                <div class="blog__card">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g" alt="logo">
+                      <span>by</span>
+                      <a href="#">W3Layouts</a>
+                    </div>
+                    <div class="col-6">
+                      <p class="p-content">April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="blog__item">
+                <div class="blog__img">
+                  <img src="./images/blog2.jpg" alt="blog">
+                </div>
+                <div class="blog__text">
+                  <p>Startup Business</p>
+                  <a href="#">Companies in NY launched a joint project on a three-tower hall</a>
+                </div>
+                <div class="blog__card">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g" alt="logo">
+                      <span>by</span>
+                      <a href="#">W3Layouts</a>
+                    </div>
+                    <div class="col-6">
+                      <p class="p-content">April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="blog__item">
+              <div class="blog__img">
+                <img src="./images/blog3.jpg" alt="blog">
+              </div>
+              <div class="blog__text">
+                <p>Marketing Strategy</p>
+                <a href="#">Design breakthrough upgrades the product and ready to launch</a>
+              </div>
+              <div class="blog__card">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g" alt="logo">
+                    <span>by</span>
+                    <a href="#">W3Layouts</a>
+                  </div>
+                  <div class="col-6">
+                    <p class="p-content">April 1, 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="subcribe__title">
+          <h3 class="title-big">Let’s find out how to work together</h3>
+          <p class="title-small">Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
+          </p>
+        </div>
+        <div class="subscribe__form">
+          <form>
+            <i class="fa-solid fa-paper-plane"></i>
+            <input type="email" name="mail" placeholder="Your Email Address">
+            <button class="btn btn-primary" type="submit">subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <div class="row">
+            <div class="col-4" style="padding-right: 3rem;" >
+              <div class="footer__logo">
+                <a class="navbar-brand" href="#">
+                  <i class="fa fa-align-right"></i>
+                  <span>Corp Vision</span>
+                  <span>Vision to your Future</span>
+                </a>
+              </div>
+              <p class="p-content">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
+              <div class="footer__icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+            <div class="col-4" style="padding-right: 3rem;">
+              <h6>CONTACT INFO</h6>
+              <ul>
+                <li class="mb-3">
+                  <p>Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+                </li>
+                <li class="mb-3">
+                  <p>Phone Number : <a href="#">+1(21) 234 4567</a></p>
+                </li>
+                <li class="mb-3">
+                  <p>Email : <a href="#">info@example.com</a></p>
+                </li>
+                <li class="mb-3">
+                  <p>Support : <a href="#">info@support.com</a></p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h6>CATEGORIES</h6>
+              <ul>
+                <li class="mb-3">
+                  <a href="#">Marketing Strategy</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#">Startup Business</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#">Web development</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h6>META</h6>
+              <ul>
+                <li class="mb-3"><a href="#">Log in</a></li>
+                <li class="mb-3"><a href="#">Entries feed</a></li>
+                <li class="mb-3"><a href="#">Comments feed</a></li>
+                <li class="mb-3"><a href="#">WordPress.org</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>
+          © 2022 Corp Vision All Rights Reserved
+         <span> 
+            WordPress Theme by 
+            <a href="#">W3Layouts.</a>
+         </span>
+        </p>
+    </div>
+    <div class="backtotop">
+      <a class="cd-top text-replace js-cd-top" href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
@@ -248,8 +652,17 @@
       });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.multiple-items').slick({
+        infinite: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots:true,
+        autoplay:false,
+    });
+</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
