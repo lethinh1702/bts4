@@ -14,6 +14,11 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- LIGHTBOX -->
+    <link rel="stylesheet" href="./lightbox2-2.11.3/lightbox2-2.11.3/dist/css/lightbox.css">
+    <link rel="stylesheet" href="./lightbox2-2.11.3/lightbox2-2.11.3/dist/css/lightbox.min.css">
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+
     <!-- ANIMATE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -34,7 +39,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">
-                    <i class="fa fa-align-right"></i>
+                    <span class="fa fa-align-right"></span>
                     <span>Corp Vision</span>
                     <span>Vision to your Future</span>
                 </a>
@@ -48,10 +53,10 @@
                       <a class="nav-link" href="#"><span>home</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"><span>about</span></a>
+                      <a class="nav-link" href="https://wp.w3layouts.com/corpvision/about-page/"><span>about</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><span>services</span></a>
+                        <a class="nav-link" href="https://wp.w3layouts.com/corpvision/services-page/"><span>services</span></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -60,16 +65,16 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><span>contact</span></a>
+                        <a class="nav-link" href="https://wp.w3layouts.com/corpvision/contact-page/"><span>contact</span></a>
                       </li>
                   </ul>
                 </div>
                 <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="mode">
-                    <i class="gg-sun"></i>
-                    <i class="gg-moon"></i>
+                  <i class="fa fa-sun"></i>
+                  <i class="fa fa-moon"></i>
                 </div>
               </nav>
         </div>
@@ -267,58 +272,72 @@
           <h33 class="title-big">Successful projects we've done</h33>
         </div>
         <div class="projects__img">
-          <div class="projects__item">
-            <img src="./images/c1.jpg" alt="project">
-            <div class="projects__overlay">
-              <div class="overlay__text">
-                <h5>Project 1</h5>
-                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
-              </div>
+          <div class="row">
+            <div class="col-4">
+              <a href="./images/c1.jpg" class="projects__item">
+                <img src="./images/c1.jpg" alt="project">
+                <div class="projects__overlay">
+                  <div class="overlay__text">
+                    <h5>Project 1</h5>
+                    <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
-          <div class="projects__item">
-            <img src="./images/c2.jpg" alt="project">
-            <div class="projects__overlay">
-              <div class="overlay__text">
-                <h5>Project 2</h5>
-                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
-              </div>
+            <div class="col-4">
+              <a href="./images/c2.jpg" class="projects__item">
+                <img src="./images/c2.jpg" alt="project">
+                <div class="projects__overlay">
+                  <div class="overlay__text">
+                    <h5>Project 1</h5>
+                    <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
-          <div class="projects__item">
-            <img src="./images/c3.jpg" alt="project">
-            <div class="projects__overlay">
-              <div class="overlay__text">
-                <h5>Project 3</h5>
-                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
-              </div> 
+            <div class="col-4">
+              <a href="./images/c3.jpg" class="projects__item">
+                <img src="./images/c3.jpg" alt="project">
+                <div class="projects__overlay">
+                  <div class="overlay__text">
+                    <h5>Project 1</h5>
+                    <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                  </div>
+                </div>
+              </a>
             </div>
+            <div class="col-4 mt-4">
+              <a href="./images/c4.jpg" class="projects__item">
+                <img src="./images/c4.jpg" alt="project">
+                <div class="projects__overlay">
+                  <div class="overlay__text">
+                    <h5>Project 1</h5>
+                    <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                  </div>
+                </div>
+              </a>
             </div>
-          <div class="projects__item">
-            <img src="./images/c4.jpg" alt="project">
-            <div class="projects__overlay">
-              <div class="overlay__text">
-                <h5>Project 4</h5>
-                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
-              </div> 
+            <div class="col-4 mt-4">
+              <a href="./images/c5.jpg" class="projects__item">
+                <img src="./images/c5.jpg" alt="project">
+                <div class="projects__overlay">
+                  <div class="overlay__text">
+                    <h5>Project 1</h5>
+                    <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                  </div>
+                </div>
+              </a>
             </div>
-          </div>
-          <div class="projects__item">
-            <img src="./images/c5.jpg" alt="project">
-            <div class="projects__overlay">
-              <div class="overlay__text">
-                <h5>Project 5</h5>
-                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
-              </div> 
-            </div>
-          </div>
-          <div class="projects__item">
-            <img src="./images/c6.jpg" alt="project">
-            <div class="projects__overlay">
-              <div class="overlay__text">
-                <h5>Project 6</h5>
-                <p>Quisque ut lectus, eros et, sed commodo risus.</p>
-              </div> 
+            <div class="col-4 mt-4">
+              <a href="./images/c6.jpg" class="projects__item">
+                <img src="./images/c6.jpg" alt="project">
+                <div class="projects__overlay">
+                  <div class="overlay__text">
+                    <h5>Project 1</h5>
+                    <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -537,7 +556,7 @@
     </section>
     <section class="subscribe">
       <div class="container">
-        <div class="subcribe__title">
+        <div class="subscribe__title">
           <h3 class="title-big">Let’s find out how to work together</h3>
           <p class="title-small">Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
           </p>
@@ -545,8 +564,8 @@
         <div class="subscribe__form">
           <form>
             <i class="fa-solid fa-paper-plane"></i>
-            <input type="email" name="mail" placeholder="Your Email Address">
-            <button class="btn btn-primary" type="submit">subscribe</button>
+            <input type="email" name="mail" placeholder="Your Email Address" required>
+            <button class="btn btn-primary">subscribe</button>
           </form>
         </div>
       </div>
@@ -617,9 +636,7 @@
     </footer>
     <div class="copyright">
       <p>
-          © 2022 Corp Vision All Rights Reserved
-         <span> 
-            WordPress Theme by 
+          © 2022 Corp Vision All Rights Reserved | WordPress Theme by 
             <a href="#">W3Layouts.</a>
          </span>
         </p>
@@ -663,6 +680,25 @@
         autoplay:false,
     });
 </script>
-
+  <div class="lightbox">
+    <div class="lb-ourcontainer">
+      <div class="lb-container">
+        <img src="./images/c1.jpg" alt="project1">
+        <div class="lb-nav">
+          <div class="lb-pre"></div>
+          <div class="lb-next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="lb-datacontainer">
+      <div class="lb-text">
+        <span>Project 1</span>
+        <p>images 1 of 6</p>
+      </div>
+      <div class="lb-lose">
+        <img src="./images/close.png" alt="">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
