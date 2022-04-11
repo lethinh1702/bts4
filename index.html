@@ -16,8 +16,6 @@
 
     <!-- LIGHTBOX -->
     <link rel="stylesheet" href="./lightbox2-2.11.3/lightbox2-2.11.3/dist/css/lightbox.css">
-    <link rel="stylesheet" href="./lightbox2-2.11.3/lightbox2-2.11.3/dist/css/lightbox.min.css">
-    <script src="./js/lightbox-plus-jquery.min.js"></script>
 
     <!-- ANIMATE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -44,7 +42,7 @@
                     <span>Vision to your Future</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <span class="fa fa-bars"></span>
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -274,7 +272,7 @@
         <div class="projects__img">
           <div class="row">
             <div class="col-4">
-              <a href="./images/c1.jpg" class="projects__item">
+              <a href="./images/c1.jpg" class="projects__item" data-lightbox="image-1" data-title="Project 1">
                 <img src="./images/c1.jpg" alt="project">
                 <div class="projects__overlay">
                   <div class="overlay__text">
@@ -285,7 +283,7 @@
               </a>
             </div>
             <div class="col-4">
-              <a href="./images/c2.jpg" class="projects__item">
+              <a href="./images/c2.jpg" class="projects__item" data-lightbox="image-1" data-title="Project 2">
                 <img src="./images/c2.jpg" alt="project">
                 <div class="projects__overlay">
                   <div class="overlay__text">
@@ -296,7 +294,7 @@
               </a>
             </div>
             <div class="col-4">
-              <a href="./images/c3.jpg" class="projects__item">
+              <a href="./images/c3.jpg" class="projects__item" data-lightbox="image-1" data-title="Project 3">
                 <img src="./images/c3.jpg" alt="project">
                 <div class="projects__overlay">
                   <div class="overlay__text">
@@ -307,7 +305,7 @@
               </a>
             </div>
             <div class="col-4 mt-4">
-              <a href="./images/c4.jpg" class="projects__item">
+              <a href="./images/c4.jpg" class="projects__item" data-lightbox="image-1" data-title="Project 4">
                 <img src="./images/c4.jpg" alt="project">
                 <div class="projects__overlay">
                   <div class="overlay__text">
@@ -318,7 +316,7 @@
               </a>
             </div>
             <div class="col-4 mt-4">
-              <a href="./images/c5.jpg" class="projects__item">
+              <a href="./images/c5.jpg" class="projects__item" data-lightbox="image-1" data-title="Project 5">
                 <img src="./images/c5.jpg" alt="project">
                 <div class="projects__overlay">
                   <div class="overlay__text">
@@ -329,7 +327,7 @@
               </a>
             </div>
             <div class="col-4 mt-4">
-              <a href="./images/c6.jpg" class="projects__item">
+              <a href="./images/c6.jpg" class="projects__item" data-lightbox="image-1" data-title="Project 6">
                 <img src="./images/c6.jpg" alt="project">
                 <div class="projects__overlay">
                   <div class="overlay__text">
@@ -421,7 +419,7 @@
           <p class="title-small">HAPPY CLIENTS FEEDBACK</p>
           <h3 class="title-big">Reviews and Testimonials</h3>
         </div>
-        <div class="testimonials__content multiple-items">
+        <div class="testimonials__content multiple-items ">
           <div class="testimonials__title">
             <p class="p-content">Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
               Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
@@ -676,29 +674,12 @@
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        speed: 500,
         dots:true,
         autoplay:false,
     });
-</script>
-  <div class="lightbox">
-    <div class="lb-ourcontainer">
-      <div class="lb-container">
-        <img src="./images/c1.jpg" alt="project1">
-        <div class="lb-nav">
-          <div class="lb-pre"></div>
-          <div class="lb-next"></div>
-        </div>
-      </div>
-    </div>
-    <div class="lb-datacontainer">
-      <div class="lb-text">
-        <span>Project 1</span>
-        <p>images 1 of 6</p>
-      </div>
-      <div class="lb-lose">
-        <img src="./images/close.png" alt="">
-      </div>
-    </div>
-  </div>
+  </script>
+
+  <script src="./lightbox2-2.11.3/lightbox2-2.11.3/dist/js/lightbox.js"></script>
 </body>
 </html>

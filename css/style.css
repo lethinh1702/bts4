@@ -189,6 +189,10 @@ header .navbar .mode i{
     font-size: 20px;
     color: #fff;
 }
+.navbar-toggler{
+    padding: 5px 8px 2px;
+    background-color: #008541;
+}
 /* CAROUSEL */
 .corpCarousel{
     height: 800px;
@@ -273,7 +277,7 @@ header .navbar .mode i{
     width: 100%;
 }
 .shape path{
-    fill: #151421   ;
+    fill: #151421;
 }
 /* ABOUT US */
 .about_us{
@@ -470,6 +474,18 @@ header .navbar .mode i{
     width: 90%;
     height: auto;
     object-fit: cover;
+}
+.lb-data .lb-details{
+    margin-top: 20px;
+}
+.lb-data .lb-caption{
+    font-size: 16px;
+    color: #fff;
+}
+.lb-data .lb-number{
+    font-size: 16px;
+    color: #62ffb4;
+    margin-top: 20px;
 }
 /* PROGRESSS */
 .progresss{
@@ -893,41 +909,4 @@ footer a:hover{
 .cd-top.text-replace.js-cd-top.cd-top--is-visible.cd-top--fade-out{
     visibility: visible;
     opacity: 1;
-}
-
-
-/* LIGHTBOX */
-.lightbox{
-    position: absolute;
-    left: 0;
-    top: 200px;
-    display: block;
-    z-index: 999999999;
-}
-.lb-ourcontainer{
-    position: relative;
-    width: 408px;
-    height: 300px;
-    margin: 0 auto;
-    border-radius: 4px;
-    border: 4px solid #00732c;
-}
-.lb-ourcontainer img{
-    width: 100%;
-}
-.lb-datacontainer{
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.lb-text span{
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-}
-.lb-text p{
-    color: #00732c;
-    padding-top: 30px;
 }
