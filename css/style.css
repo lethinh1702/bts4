@@ -1051,6 +1051,7 @@ footer a:hover {
 }
 
 /* REPONSIVE */
+/* HEADER */
 @media only screen and (max-width: 991px) {
     .navbar-collapse {
         max-height: calc(100vh - 80px);
