@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header__theme">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">
@@ -67,12 +67,8 @@
                       </li>
                   </ul>
                 </div>
-                <div class="search">
+                <div class="search toggle">
                   <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="mode">
-                  <i class="fa fa-sun"></i>
-                  <i class="fa fa-moon"></i>
                 </div>
               </nav>
         </div>
@@ -678,6 +674,16 @@
         dots:true,
         autoplay:false,
     });
+  </script>
+
+  <script>
+    const search = document.querySelector('.toggle');
+    const navbar = document.querySelector('.navbar');
+    
+    toggle.onclick = function() {
+      toggle.classList.toggle('active');
+      navbar.classList.toggle('dark');
+    }
   </script>
 
   <script src="./lightbox2-2.11.3/lightbox2-2.11.3/dist/js/lightbox.js"></script>

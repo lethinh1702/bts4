@@ -5,7 +5,7 @@
 }
 body,html{
     font-family: 'Jost', sans-serif;
-    background-color: #fff;
+    background-color: #151421;
     color: #666;
 }
 .container{
@@ -142,7 +142,12 @@ header .collapse .navbar-nav .nav-link i{
 header .collapse .navbar-nav .nav-item.active .nav-link span{
     opacity: 1;
 }
-header .navbar .search{
+header .navbar .search.toggle{
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+}
+header .navbar .search i{
     color: #fff;
     height: 45px;
     width: 45px;
@@ -152,16 +157,16 @@ header .navbar .search{
     border-radius: 50%;
     background-color: #009f4d;
     margin-right: 16px;
-    cursor: pointer;
 }
-header .navbar .mode{
-    width: 24px;
-    height: 24px;
-    padding: 1px 0 ;
+header .navbar .search.toggle::after{
+    content: "\f185";
+    font-family: fontAwesome;
+    line-height: 45px;
+    font-size: 24px;
 }
-header .navbar .mode i{
-    font-size: 20px;
-    color: #fff;
+header .navbar .search.toggle.active::after{
+    content: "\f186";
+    font-family: fontAwesome;
 }
 .navbar-toggler{
     padding: 5px 8px 2px;
@@ -257,13 +262,9 @@ header .navbar .mode i{
     width: 100%;
 }
 .shape path{
-    fill: #151421 !important;
-
+    fill: #151421!important;
 }
 /* ABOUT US */
-.about_us{
-    background-color: #151421;
-}
 .about_us__content{
     padding: 3rem 0;
 }
@@ -327,7 +328,6 @@ header .navbar .mode i{
 }
 /* SERVICE */
 .services{
-    background-color: #151421;
     text-align: center;
     padding: 6rem 0;
 }
@@ -470,7 +470,6 @@ header .navbar .mode i{
 }
 /* PROGRESSS */
 .progresss{
-    background-color: #151421;
     padding: 6rem 0;
 }
 .progresss img{
@@ -513,7 +512,7 @@ header .navbar .mode i{
     background-image: linear-gradient(-224deg, #0d8abc, #61fded);
 }
 .progresss-info{
-    margin-top: 26px;
+    margin-top: 20px;
 }
 .info1 .progresss__content i{
     font-size: 13px;
@@ -633,7 +632,6 @@ header .navbar .mode i{
 }
 /* BLOG */
 .blog{
-    background-color: #151421;
     padding: 6rem 0;
 }
 .blog__title{
@@ -722,7 +720,6 @@ header .navbar .mode i{
     text-align: center;
     padding: 6rem 0;
     background-image: url(../images/map.png);
-    background-color: #151421;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -779,7 +776,6 @@ header .navbar .mode i{
 }
 /* FOOTER */
 footer{
-    background-color: #151421;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding: 4rem 0;
@@ -850,7 +846,6 @@ footer a:hover{
 }
 /* COPYRIGHT */
 .copyright{
-    background-color: #151421;
     text-align: center;
     padding: 0.5rem 0;
 }
